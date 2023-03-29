@@ -1,17 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Provider } from "react-redux";
 
 import "./index.scss";
 import "./bootstrap.min.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import store from "./store";
 
 ReactDOM.render(
-  <Provider store={store}>
+  <div>
     <App />
-  </Provider>,
+  </div>,
   document.getElementById("root")
 );
 

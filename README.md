@@ -1,6 +1,6 @@
-# React Boilerplate
+# Resume or Portfolio Template
 
-This project acts as a react boilerplate for any project.
+This is a template for Resumes or Portfolio websites.
 
 ## Tech stack this template is made of are:
 
@@ -11,6 +11,3 @@ This project acts as a react boilerplate for any project.
    - React Bootstrap
    - Material UI (MUI React)
 5. React router along with bootstrap router
-6. Redux middleware for store management
-7. Node JS with express setup
-8. Node JS user login with encrypted password and JWT token response

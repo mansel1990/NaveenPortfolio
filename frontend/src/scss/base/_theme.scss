@@ -1,0 +1,27 @@
+.themeToggle {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2px;
+  border-bottom: 0.1px solid var(--text-color);
+}
+.nav-header {
+  .bg-light {
+    border: 0px;
+    border-bottom: 0.1px solid var(--text-color);
+    transition: background-color 0.5s ease;
+  }
+  .bg-dark {
+    border: 0px;
+    border-bottom: 0.1px solid var(--text-color);
+    transition: background-color 0.5s ease;
+  }
+}
+footer {
+  a {
+    color: var(--text-color);
+  }
+  section {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}

@@ -1,14 +1,4 @@
+@import "../node_modules/bootstrap/scss/bootstrap";
 @import url("./scss/base/_animations.scss");
 @import url("./scss/base/_base.scss");
-
-@import url("./scss/_layout.scss");
-
-@import url("./scss/components/_component.scss");
-@import url("./scss/components/_header.scss");
-@import url("./scss/components/_sidenav.scss");
-
-@import url("./scss/screens/_contact.scss");
-@import url("./scss/screens/_home.scss");
-@import url("./scss/screens/_profile.scss");
-@import url("./scss/screens/_skillset.scss");
-@import url("./scss/screens/_tools.scss");
+@import url("./scss//base/_theme.scss");

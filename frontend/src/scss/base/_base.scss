@@ -1,66 +1,58 @@
-/*
-COLORS
-
-Primary: #eb2f64
-Primary light: #FF3366
-Primary dark: #BA265D
-
-Grey light 1: #faf9f9
-Grey light 2: #f4f2f2
-Grey light 3: #f0eeee
-Grey light 4: #ccc
-
-Grey dark 1: #333
-Grey dark 2: #777
-Grey dark 3: #999
-
-*/
-
 :root {
-  --color-primary: #eb2f64;
-  --color-primary-light: #ff3366;
-  --color-primary-dark: #ba265d;
-  --color-primary-tint: #ed4373;
-  --color-primary-shade: #d32a5a;
-
-  --color-grey-light-1: #faf9f9;
-  --color-grey-light-2: #f4f2f2;
-  --color-grey-light-3: #f0eeee;
-  --color-grey-light-4: #ccc;
-  --color-grey-dark-1: #333;
-  --color-grey-dark-2: #777;
-  --color-grey-dark-3: #999;
-
-  --shadow-dark: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  --bg-color: #343a40;
+  --primary-color: #0d0d0d;
+  --secondary-color: #fff;
+  --text-color: #fff;
+  --text-color-2: #fff;
+  --text-color-3: rgb(204, 0, 0);
+  --overlay-color: rgb(12 12 12 / 63%);
 }
 
-* {
-  margin: 0;
-  padding: 0;
+[data-theme="light"] {
+  --bg-color: #ffffff;
+  --primary-color: #ffffff;
+  --secondary-color: #000;
+  --text-color: #000;
+  --text-color-2: #000;
+  --text-color-3: rgb(204, 0, 0);
+  --overlay-color: rgb(255 255 255 / 70%);
 }
 
 *,
-*::before,
-*::after {
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
   box-sizing: inherit;
 }
 
-html {
-  font-size: 62.5%; // 1rem = 10px, 10/16 = 62.5%
+body {
   box-sizing: border-box;
 }
-
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  line-height: 1.6;
-  color: var(--color-grey-dark-2);
-  background-image: linear-gradient(
-    to right bottom,
-    var(--color-primary-light),
-    var(--color-primary-dark)
-  );
-  background-size: cover;
-  background-repeat: no-repeat;
+.screen-content {
   min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.5s ease;
+}
+.nav-header {
+  display: flex;
+  header {
+    flex: 98;
+  }
+  .themeToggle {
+    flex: 2;
+  }
+}
+.main-content {
+  flex: 1;
+}
+header {
+  min-height: 5rem;
+}
+footer {
+  min-height: 5rem;
 }

@@ -1,18 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.b463cb4c.css",
-    "main.js": "/static/js/main.fda3fea3.js",
+    "main.css": "/static/css/main.57001da2.css",
+    "main.js": "/static/js/main.e3abdc04.js",
     "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
-    "static/media/SMface.png": "/static/media/SMface.5d8a7ab87deb99d494ec.png",
-    "static/media/toad-icon.png": "/static/media/toad-icon.64953285102172e1cdaa.png",
-    "static/media/sprite.svg": "/static/media/sprite.9c024382041a9b9990fafc108bd14143.svg",
     "index.html": "/index.html",
-    "main.b463cb4c.css.map": "/static/css/main.b463cb4c.css.map",
-    "main.fda3fea3.js.map": "/static/js/main.fda3fea3.js.map",
+    "main.57001da2.css.map": "/static/css/main.57001da2.css.map",
+    "main.e3abdc04.js.map": "/static/js/main.e3abdc04.js.map",
     "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b463cb4c.css",
-    "static/js/main.fda3fea3.js"
+    "static/css/main.57001da2.css",
+    "static/js/main.e3abdc04.js"
   ]
 }

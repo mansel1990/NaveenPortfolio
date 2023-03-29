@@ -1,22 +1,30 @@
 import React from "react";
+import { Navbar, Nav } from "react-bootstrap";
+import { LinkContainer } from "react-router-bootstrap";
 
-const Header = () => {
+const Header = ({ theme }) => {
   return (
-    <div className="header">
-      <div className="mob-user-nav">
-        <div className="mob-user-nav__user">
-          <img
-            src={require("../images/SMface.png")}
-            alt="SM"
-            className="mob-user-nav__user-photo"
-          />
-          <div>
-            <span className="mob-user-nav__user-name">Sanjay Mansel</span>
-            <span className="mob-user-nav__user-role">Front End Developer</span>
-          </div>
-        </div>
-      </div>
-    </div>
+    <header>
+      <Navbar bg={theme} variant={theme} expand="lg" collapseOnSelect>
+        <LinkContainer to="/">
+          <Navbar.Brand>Template</Navbar.Brand>
+        </LinkContainer>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
+            <LinkContainer to="/">
+              <Nav.Link>About</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/research">
+              <Nav.Link>Research</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/companies">
+              <Nav.Link>Companies</Nav.Link>
+            </LinkContainer>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </header>
   );
 };
 
